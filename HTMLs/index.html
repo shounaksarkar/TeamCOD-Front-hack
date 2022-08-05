@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRAVA</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- font awesome cdn link  -->
+    <link rel = "icon" href = "images/strava.ico" 
+        type = "image/x-icon">
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/clients.css">
+    <link rel="stylesheet" href="screenshots.scss">
+    <link rel="stylesheet" href="stylesheets/typing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+</head>
+<body onload="myFunction()" >
+    <div id="loading"></div>
+    
+    <div id="particles-js"></div>
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+<!-- header section starts  -->
+
+<header  >
+    
+    <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000"><span></span><img src="images/363-3633072_strava-hd-png-download-removebg-preview.webp"></a>
+    
+    <div id="Mode">
+        <div id="switch"></div>
+        <label id="inner-text">Dark</label>
+    </div>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="fas fa-bars"></label>
+    <div id="fixedbutton">
+        <input type="checkbox" id="toggle" onchange="changeMode()">
+        <label for="toggle"></label>
+      </div>
+      
+    
+    <nav class="navbar">
+        <b><a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#about">about</a>
+        <a href="#review">review</a>
+        <a href="#pricing">pricing</a>
+        <a href="#contact">contact</a>
+        <a href="login_page.html" target="_blank" class="btn1">Login</a>
+    </b>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+        
+    
+
+    <div class="content">
+        <video playsinline autoplay muted loop  id="bgvid">
+            <source src="images\No Rejection – Athletes Unfiltered.mp4" type="video/webm">
+            
+          </video>
+        
+            
+        
+          
+          <!-- <img src="images/png-transparent-feature-phone-smartphone-strava-user-interface-smartphone-electronics-gadget-user-interface-design-removebg-preview.webp" alt=""> -->
+        <div class="text-box">
+            <div class="fixed-text">NO</div>
+            <div class="animate-text">
+                <div>
+                    <span>SHAME</span>
+                    <span>BORDER</span>
+                    <span>BOUNDARIES</span>
+                    <span>STRESS</span>
+                    <span>REGRET</span>
+                    <span>REJECTION</span>
+                </div>	
+            </div>
+        </div>
+        
+        <ul class="front_words">
+            <li>Designed by athletes, for athletes,</li>
+            <li>Strava's mobile app and website connect millions of runners and</li>
+            <li>cyclists through the sports they love.</li>
+        </ul> 
+             
+    
+        <a href="https://play.google.com/store/apps/details?id=com.strava"   target="_blank" class="btn">download now</a>
+        
+        
+    </div>
+    
+    
+
+</section>
+
+
+<marquee direction="right" >
+    <div class="bi" >        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_8fz0xapf.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player></div>
+    </marquee>
+<!-- home section ends -->
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> app features </h1>
+
+
+    <div class="box-container" >
+
+        <div class="box"   data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+            <img src="images/f-icon1.webp" alt=""  >
+            <h3  >Track & Analyze</h3>
+            <p>Learn about recording an activity on Strava and all the ways you can analyze your performance.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+            <img src="images/f-icon2.webp" alt="" >
+            <h3>Share & Connect</h3>
+            <p>Workout with friends, stay motivated, get inspired - our community is what separates Strava from the rest.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+            <img src="images/f-icon3.webp" alt="" >
+            <h3>Explore & Compete</h3>
+            <p>Discover your next goal with Strava segments, routes, maps, clubs, challenges and race courses.
+
+                EXPLORE</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading" > about the app </h1>
+
+    
+    <div class="column">
+
+        <div class="image" data-tilt data-tilt-glare data-tilt-max-glare="0.9" >
+            <img src="images/about-img.webp" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Get notified on the go..</h3>
+            <p>If you're active, Strava was made for you. Our mobile app and website enhance the experience of sport and connect millions of athletes from around the world. We're the social network for those who strive. Join us.
+
+
+
+            </p>
+            <div class="buttons" >
+                <a href="https://play.google.com/store/apps/details?id=com.strava" class="btn"> <i class="fab fa-google-play"></i>  google-play</a>
+                <a href="https://apps.apple.com/us/app/strava-run-ride-hike/id426826309" class="btn"> <i class="fab fa-apple"></i> app store </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<div class="activities">
+<h1 class="heading">our activities</h1>
+<section id="slider">
+    <input type="radio" name="slider" id="s1" checked>
+    <input type="radio" name="slider" id="s2">
+    <input type="radio" name="slider" id="s3">
+    <input type="radio" name="slider" id="s4">
+    <input type="radio" name="slider" id="s5">
+  
+    <label for="s1" id="slide1"><img src="images/screenshot_1.webp" alt=""></label>
+    <label for="s2" id="slide2"><img src="images/screenshot_2.webp" alt=""></label>
+    <label for="s3" id="slide3"><img src="images/screenshot_3.webp" alt=""></label>
+    <label for="s4" id="slide4"><img src="images/screenshot_4.webp" alt=""></label>
+    <label for="s5" id="slide5"><img src="images/screenshot_5.webp" alt=""></label>
+  </section>
+</div>
+
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading" > people's review </h1>
+
+    <div class="box-container">
+
+        <div class="box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/pic1.webp" alt="">
+                <h3>Antony Thomas</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="comment">
+                    Strava is a big platform which is kind of becoming favourite for sports persons across the world. Various features has helped the sports people to chalk out their performance and do better next time. It is not an app but a life style for sports guys. Almost every sport is being covered and accuracy is also nearly fine. Hoping to have more better features in the coming time.
+                </div>
+            </div>
+        </div>
+
+        <div class="box"data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/pic2.webp" alt="">
+                <h3>Debarshi De</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="comment">
+                    One of the finest fitness app. The best thing about it is that it can successfully recover from any problem occuring during an activity without loss of your data, how much distance and time you've traveled and so forth. My only suggestion would be to show milestones for every km or miles in the map after your activity is complete.
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-tilt data-tilt-glare data-tilt-max-glare="0.5" >
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/pic3.webp" alt="">
+                <h3>Anand Rao</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="comment">
+                    I was expecting a lot more from the app based on its advertising. The training plan part isn't what I want. It's also a little oit of synch with what I think a runner needs . There is a overlaod of tracking information compared to how to improve as a runner to motivate the runner to help keep them on track. Will check out runkeeper too to see if it lives up .
+                </div>
+            </div>
+        </div>
+
+    </div>
+<div class="blank_space">
+ 
+</div>
+
+</section>
+<h1 class="heading">We are compatible with </h1>
+<div class="row">
+    <div class="container">
+      <section class="customer-logos slider" data-arrows="true">
+        <div class="slide"><img src="images/device_compatible/1.webp"></div>
+        <div class="slide"><img src="images/device_compatible/2.webp"></div>
+        <div class="slide"><img src="images/device_compatible/3.webp"></div>
+        <div class="slide"><img src="images/device_compatible/4.png"></div>
+        <div class="slide"><img src="images/device_compatible/5.webp"></div>
+        <div class="slide"><img src="images/device_compatible/6.webp"></div>
+        <div class="slide"><img src="images/device_compatible/7.webp"></div>
+        <div class="slide"><img src="images/device_compatible/8.webp"></div>
+        <div class="slide"><img src="images/device_compatible/9.webp"></div>
+      </section>
+    </div>
+  </div>
+<!-- review section ends -->
+
+<!-- pricing section starts  -->
+
+<section class="pricing" id="pricing">
+
+    <h1 class="heading"> Our Pricing Plans </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 class="title">Free version</h3>
+            <div class="price"><span>Rs.0.0/Month</span></div>
+            <ul>
+                <li> <i class="fas fa-check"></i> Activity Tracking </li>
+                <li> <i class="fas fa-check"></i>A social media feed </li>
+                <li> <i class="fas fa-check"></i> Find local fitness events</li>
+                <li> <i class="fas fa-times"></i> compare features</li>
+                <li> <i class="fas fa-times"></i> analyze with others</li>
+                <li> <i class="fas fa-check"></i> more</li>
+            </ul>
+            <a href="#" class="btn">check out</a>
+        </div>
+
+        <div class="box">
+            <h3 class="title">Strava Summit</h3>
+            <div class="price"><span>Rs.90/Month</span></div>
+            <ul>
+                <li> <i class="fas fa-check"></i>all the free features</li>
+                <li> <i class="fas fa-check"></i>custom fitness goals</li>
+                <li> <i class="fas fa-check"></i>compare features</li>
+                <li> <i class="fas fa-check"></i>analyze with others.</li>
+                <li> <i class="fas fa-check"></i>Real time fitness sms sender</li>
+                <li> <i class="fas fa-check"></i>interactive fitness event tickets</li>
+            </ul>
+            <a href="#" class="btn">check out</a>
+        </div>
+
+        
+
+    </div>
+
+</section>
+
+<!-- pricing section ends -->
+
+
+<section class="contact" id="contact">
+
+    <div class="image">
+        <img src="images/contact-img.webp" alt="">
+    </div>
+
+    <form action="" >
+
+        <h1 class="heading">contact us</h1>
+
+        <div class="inputBox">
+            <input type="text" required>
+            <label>name</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="email" required>
+            <label>email</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="number" required>
+            <label>phone</label>
+        </div>
+
+        <div class="inputBox">
+            <textarea required name="" id="" cols="30" rows="10"></textarea>
+            <label>message</label>
+        </div>
+
+        <input type="submit" class="btn" value="send message">
+
+    </form>
+
+</section>
+
+<!-- contact section edns -->
+
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Strava is the best app to guide you through your fitness journey</p>
+            <a href="our team.html" target="_blank"><b><h2>Click here to know our team members</h2></b></a>
+            <!-- <div id="google_translate_element"></div> -->
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#about">about</a>
+            <a href="#review">review</a>
+            <a href="#pricing">pricing</a>
+            <a href="#contact">contact</a>
+            
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/Strava/">facebook</a>
+            <a href="https://www.instagram.com/strava/">instagram</a>
+            <a href="https://in.pinterest.com/strava/_created/">pinterest</a>
+            <a href="https://twitter.com/Strava?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">twitter</a>
+            
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <div class="info">
+                <i class="fas fa-phone"></i>
+                <p>+91 7450827423<br>  </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <p> b2003das@gmail.com <br> sarkarshounak7@gmail.com</p>
+            </div>
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> MCKV Institute Of Engineering</p>
+            </div>
+        </div>
+
+    </div>
+    <div id="google_translate_element"></div>
+    <h1 class="credit"> &copy; Made by CodeOfDuty (1st year)
+    </h1>
+
+</div>
+<script src="javascripts/script.js"></script>
+<script src="partcles_.js"></script>
+<script src="screenshots.js"></script>
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var preloader = document.getElementById('loading');
+    function myFunction(){
+        preloader.style.display = 'none';
+    }
+
+
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+   
+  });
+</script>
+<script>
+    function changeMode(){
+      document.body.classList.toggle("dark");
+    }
+  </script>
+     <script>
+        const Mode_icon = document.getElementById('Mode');
+        const Switch_Mode = document.getElementById('switch');
+        const Inner_text = document.getElementById('inner-text');
+        Mode.onclick = function(){
+            document.body.classList.toggle('dark-mode');
+            Switch_Mode.classList.toggle('switch-active');
+            Inner_text.classList.toggle('Inner-text-active');
+            if(document.body.classList.contains('dark-mode')){
+                Inner_text.innerHTML = 'Light';
+            }
+            else{
+                Inner_text.innerHTML = 'Dark';
+            }
+        }
+
+    </script>
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+     <script type="text/javascript">
+		$(document).ready(function() {
+ 		  $('.customer-logos').slick({
+   			slidesToShow: 5,
+    		slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 50,
+			arrows: false,
+			dots: false,
+			pauseOnHover: true,
+			responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 4
+			}
+			}, {
+			breakpoint: 520,
+			settings: {
+				slidesToShow: 3
+			}
+			}]
+		});
+		});
+     </script>
+<script type="text/javascript" src="javascripts/vanilla-tilt.min.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".card"),{
+      glare: true,
+      reverse: true,
+      "max-glare": 0.5
+    });
+  </script>
+  
+  <script>(function(w, d) { w.CollectId = "62a774457fd5da5e20c64b16"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+</body>
+</html>
